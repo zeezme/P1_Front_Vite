@@ -1,11 +1,12 @@
-import React from "react";
-import Counter from "./features/counter/Counter";
+import React, {Fragment} from "react";
+import Router from "./router/router";
 
 function App(): JSX.Element {
   return (
-    <div className="App">
-      <Counter />
-    </div>
+    <Fragment>
+
+      <Router/>
+    </Fragment>
   );
 }
 
