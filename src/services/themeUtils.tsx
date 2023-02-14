@@ -1,4 +1,6 @@
 import Cookies from 'universal-cookie'
+import { updateTheme } from '../redux/generalReducer'
+import { store } from '../redux/store'
 
 const cookies = new Cookies()
 
@@ -10,9 +12,14 @@ export const theme = {
   },
   toggleCookie: () => {
     const response = cookies.get('theme')
+
     if (response === 'dark') {
       cookies.set('theme', 'light')
-    } else cookies.set('theme', 'dark')
+      store.dispatch(updateTheme('light'))
+    } else {
+      cookies.set('theme', 'dark')
+      store.dispatch(updateTheme('dark'))
+    }
   },
 
   getCookie: () => {
@@ -21,27 +28,9 @@ export const theme = {
   },
   verifyThemeCookie: () => {
     const response = cookies.get('theme')
-    console.log(response)
 
     if (response) {
       document.querySelector('html')!.setAttribute('data-theme', response)
     }
   }
 }
-
-/* export const setThemeOnCookie = (theme: ThemeType) => {
-  cookies.set('theme', theme)
-}
-
-export const getTheme = () => {
-  const response = cookies.get('theme')
-  return response
-}
-
-export const verifyThemeCookie = () => {
-  const response = cookies.get('theme')
-  console.log(response)
-
-  /* if (response) {
-        document.querySelector('html')!.setAttribute('data-theme', theme)
-    } */

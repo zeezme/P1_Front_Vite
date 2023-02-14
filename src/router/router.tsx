@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFound from '../@core/components/not-found'
 import VerticalLayout from '../@core/layouts/verticalLayout'
+import { RootState } from '../redux/store'
 import { theme } from '../services/themeUtils'
 
 import Home from '../views/home/home'
@@ -9,7 +11,13 @@ import Home from '../views/home/home'
 import { routes } from './routes'
 
 export default function Router() {
-  theme.verifyThemeCookie()
+  const themeUpdater = useSelector(
+    (state: RootState) => state.generalReducer.theme
+  )
+
+  useEffect(() => {
+    theme.verifyThemeCookie()
+  }, [themeUpdater])
 
   const routesJson = routes.map((route) => {
     if (route.show === false) {

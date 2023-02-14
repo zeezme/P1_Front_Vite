@@ -58,7 +58,7 @@ export default function Navbar() {
         <button
           className="btn btn-ghost btn-circle"
           onClick={() => {
-            theme.setCookie('dark')
+            theme.toggleCookie()
           }}
         >
           <div className="indicator">
