@@ -33,8 +33,6 @@ export const verifyJwt = async () => {
 
       return { status: res.status, message: 'Authorized' }
     } catch (error) {
-      let status = 500
-      let message = 'Unknown Error'
       if (error instanceof Error) {
         return { status: 500, message: 'Unauthorized' }
       }

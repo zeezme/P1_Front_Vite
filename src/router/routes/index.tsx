@@ -1,7 +1,7 @@
 import React from 'react'
 import { verifyJwt } from '../../services/verifyJwt'
 
-/* const Login = React.lazy(() => import('../../views/login/login')) */
+const Login = React.lazy(() => import('../../views/login/login'))
 const PayWall = React.lazy(() => import('../../views/paywall/paywall'))
 
 const getShow = async () => {
@@ -16,10 +16,10 @@ export const routes = [
   {
     id: 1,
     name: 'login',
-    path: '/t2',
+    path: '/login',
     element: (
       <React.Suspense fallback={<p>Loading</p>}>
-        <PayWall />
+        <Login />
       </React.Suspense>
     ),
     show: true
