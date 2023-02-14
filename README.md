@@ -1,56 +1,52 @@
+
 # React, Typescript, Tailwindcss, Redux Toolkit, eslint with Vite
 
 This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/) boilerplate built with [Vite](https://vitejs.dev).
 
-## What's inside?
+## To dos:
 
--   [ReactJS](https://reactjs.org)
--   [Vite](https://vitejs.dev)
--   [TypeScript](https://www.typescriptlang.org)
--   [Tailwind](https://tailwindcss.com/)
--   [RTK](https://redux-toolkit.js.org/)
--   [ESLint](https://eslint.org)
+ - ~~Router validando permissão por rota~~
+ - ~~Validação de Token JWT~~   
+ - Fazer lógica de login usuário
+	 - Cadastro
+	 - ~~Login~~
+		 - ~~Spinner~~
+		 - ~~Erros de login~~
+- Sistema de tema escuro
+	- ~~Tema Escuro~~
+	- Colocar o "tema selecionado" no cookie
+ - Navbar
+	 - Botão de login
+	 - Mostrar nome do usuário caso esteja logado
+	 - Mostrar foto de perfil caso esteja logado
+ - Telas Comuns
+	 - Not found 404
+	 - No permission
+ - Componentes Comuns
+	- Botão de logout
 
-## Getting started
 
-1. Clone the repository.
 
-    ```bash
-    git clone https://github.com/IsaiaPhiliph/vite-reactts-tailwind-rtk-eslint.git
-    ```
-
-2. Access the project.
-
-    ```bash
-    cd vite-reactts-tailwind-rtk-eslint
-    ```
-
-3. Make it your own repository
-
-    ```bash
-    rm -rf .git
-    git init
-    ```
-
-4. Install dependencies.
+<hr/>
+1. Install dependencies.
 
     ```bash
     npm i
     ```
 
-5. Start the development server.
+2. Start the development server.
 
     ```bash
     npm run dev
     ```
 
-6. Build for production.
+Build for production.
 
     ```bash
     npm run build
     ```
 
-7. Test your production build.
+Test your production build.
 
     ```bash
     npm run serve
