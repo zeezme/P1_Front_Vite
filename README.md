@@ -13,7 +13,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 	 - ~~Login~~
 		 - ~~Spinner~~
 		 - ~~Erros de login~~
-- Sistema de tema escuro
+- ~~Sistema de tema escuro~~
 	- ~~Tema Escuro~~
 	- ~~Colocar o "tema selecionado" no cookie~~
  - Navbar
