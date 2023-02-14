@@ -28,6 +28,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 
 
 <hr/>
+
 1. Install dependencies.
 
     ```bash
@@ -39,6 +40,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
     ```bash
     npm run dev
     ```
+
 
 Build for production.
 
