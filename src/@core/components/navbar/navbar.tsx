@@ -2,19 +2,6 @@ import React from 'react'
 import { theme } from '../../../services/themeUtils'
 
 export default function Navbar() {
-  /*   const [theme, setTheme] = React.useState('light') */
-  /*   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  } */
-  // initially set the theme and "listen" for changes to apply them to the HTML tag
-  /*   React.useEffect(() => {
-    try {
-      document.querySelector('html')!.setAttribute('data-theme', theme)
-    } catch (error) {
-      console.error('Could not find <html> element')
-    }
-  }, [theme]) */
-
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">

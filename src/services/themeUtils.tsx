@@ -11,8 +11,8 @@ export const theme = {
   toggleCookie: () => {
     const response = cookies.get('theme')
     if (response === 'dark') {
-      //PAREI AQUI
-    }
+      cookies.set('theme', 'light')
+    } else cookies.set('theme', 'dark')
   },
 
   getCookie: () => {
