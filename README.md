@@ -1,4 +1,5 @@
 
+
 # React, Typescript, Tailwindcss, Redux Toolkit, eslint with Vite
 
 This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/) boilerplate built with [Vite](https://vitejs.dev).
@@ -14,7 +15,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 		 - ~~Erros de login~~
 - Sistema de tema escuro
 	- ~~Tema Escuro~~
-	- Colocar o "tema selecionado" no cookie
+	- ~~Colocar o "tema selecionado" no cookie~~
  - Navbar
 	 - Botão de login
 	 - Mostrar nome do usuário caso esteja logado
