@@ -1,8 +1,10 @@
 
 
-# React, Typescript, Tailwindcss, Redux Toolkit, eslint with Vite
+# Unborefy
 
-This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/) boilerplate built with [Vite](https://vitejs.dev).
+This project aims to dismistify the job looking proccess, here every oportunity is clear and direct, you will be told exacly how much you gonna make and do.
+
+[React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/)
 
 ## To dos:
 
@@ -31,13 +33,13 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 
 <hr/>
 
-1. Install dependencies.
+Install dependencies.
 
     ```bash
     npm i
     ```
 
-2. Start the development server.
+Start the development server.
 
     ```bash
     npm run dev
