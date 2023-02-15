@@ -1,4 +1,5 @@
 import React from 'react'
+import Spinner from '../../@core/components/spinner'
 import { verifyJwt } from '../../services/verifyJwt'
 
 const Login = React.lazy(() => import('../../views/login/login'))
@@ -18,7 +19,7 @@ export const routes = [
     name: 'login',
     path: '/login',
     element: (
-      <React.Suspense fallback={<p>Loading</p>}>
+      <React.Suspense fallback={<Spinner />}>
         <Login />
       </React.Suspense>
     ),
@@ -29,7 +30,7 @@ export const routes = [
     name: 'paywall',
     path: '/paywall',
     element: (
-      <React.Suspense fallback={<p>Loading</p>}>
+      <React.Suspense fallback={<Spinner />}>
         <PayWall />
       </React.Suspense>
     ),
