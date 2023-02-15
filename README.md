@@ -17,14 +17,15 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 	- ~~Tema Escuro~~
 	- ~~Colocar o "tema selecionado" no cookie~~
  - Navbar
-	 - Botão de login
+	 - ~~Botão de login~~
 	 - Mostrar nome do usuário caso esteja logado
 	 - Mostrar foto de perfil caso esteja logado
  - Telas Comuns
 	 - Not found 404
 	 - No permission
  - Componentes Comuns
-	- Botão de logout
+	- ~~Botão de logout~~
+ - Criar dotEnv
 
 
 
