@@ -1,7 +1,23 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../../redux/store'
 import { theme } from '../../../services/themeUtils'
+import { BsMoonFill, BsSunFill } from 'react-icons/bs'
+import { AiOutlineUser } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
+import Cookies from 'universal-cookie'
+import LogoutButton from '../logoutButton'
 
 export default function Navbar() {
+  const cookies = new Cookies()
+
+  const selectedTheme = useSelector(
+    (state: RootState) => state.generalReducer.theme
+  )
+
+  const userData = cookies.get('token')
+
+  const navigate = useNavigate()
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -35,25 +51,18 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      <div className="navbar-center ">
+      <div
+        className="navbar-center btn btn-ghost"
+        onClick={() => navigate('/')}
+      >
         <a className=" normal-case text-xl font-bold">UNBOREFY</a>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
+        <button
+          className="btn btn-ghost btn-circle"
+          onClick={() => navigate('/login')}
+        >
+          <AiOutlineUser size={24} />
         </button>
         <button
           className="btn btn-ghost btn-circle"
@@ -62,9 +71,18 @@ export default function Navbar() {
           }}
         >
           <div className="indicator">
-            <span className="badge badge-xs badge-primary indicator-item"></span>
+            {selectedTheme === 'dark' ? (
+              <BsSunFill size={25} />
+            ) : (
+              <BsMoonFill size={18} />
+            )}
           </div>
         </button>
+        {userData && (
+          <div className="indicator">
+            <LogoutButton />
+          </div>
+        )}
       </div>
     </div>
   )

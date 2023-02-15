@@ -38,6 +38,7 @@ export default function Login() {
   const submit = async () => {
     setLoading('loading')
     try {
+      //COLOCAR IP E PORTA PELO ENV URGENTE
       const res = await axios.post('http://localhost:8080/api/auth/signin', {
         username: loginFields.email,
         password: loginFields.password

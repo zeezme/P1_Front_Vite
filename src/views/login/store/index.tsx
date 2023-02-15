@@ -14,10 +14,6 @@ interface State {
   user: User
 }
 
-export const logout = createAsyncThunk<void, void>('login/logout', async () => {
-  localStorage.removeItem('user')
-})
-
 const initialState: State = {
   fields: {
     email: '',
