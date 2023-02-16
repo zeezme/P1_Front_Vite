@@ -1,6 +1,11 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { getProducts } from './store'
+import type { AppDispatch } from '../../redux/store'
 
 export default function PayWall() {
+  const dispatch: AppDispatch = useDispatch()
+
   return (
     <div className="container sm:mx-auto ">
       <div className="card sm:mx-auto lg:w-96 card-compact bg-base-100 shadow-xl">
@@ -17,7 +22,7 @@ export default function PayWall() {
             <button
               className="btn btn-primary"
               onClick={() => {
-                alert('Penis')
+                dispatch(getProducts())
               }}
             >
               Bênis
