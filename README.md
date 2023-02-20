@@ -2,7 +2,7 @@
 
 # Unborefy
 
-This is an in development web sales and store front platform that is primarally focused on attending the demands of cafeterias and bars.
+This is an in development web sales and store front platform that is primarily focused on attending the demands of cafeterias and bars.
 The project is using Shopify API in the firsts stages but it will be replaced as soon as needed. 
 
 [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/)
