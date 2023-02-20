@@ -2,7 +2,7 @@
 
 # Unborefy
 
-This project aims to dismistify the job looking proccess, here every oportunity is clear and direct, you will be told exacly how much you gonna make and do.
+E-commerce
 
 [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/)
 
