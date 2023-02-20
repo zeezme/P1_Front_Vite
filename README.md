@@ -2,7 +2,8 @@
 
 # Unborefy
 
-E-commerce
+This is an in development web sales and store front platform that is primarally focused on attending the demands of cafeterias and bars.
+The project is using Shopify API in the firsts stages but it will be replaced as soon as needed. 
 
 [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/)
 
@@ -28,6 +29,8 @@ E-commerce
  - Componentes Comuns
 	- ~~Botão de logout~~
  - Criar dotEnv
+ - Trazer dados da API connectada ao Shopify
+ 	 - Sincronizar o webhook do front com o do back
 
 
 
