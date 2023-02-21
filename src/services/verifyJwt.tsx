@@ -13,9 +13,11 @@ export const verifyJwt = async () => {
       return null
     }
   }
+  const api_url = import.meta.env.VITE_API_URL
+  const api_port = import.meta.env.VITE_API_PORT
 
   const api = axios.create({
-    baseURL: 'http://localhost:8080/api/test',
+    baseURL: `http://${api_url}:${api_port}/api/test`,
     timeout: 8000,
     headers: {
       'x-access-token': userData?.accessToken

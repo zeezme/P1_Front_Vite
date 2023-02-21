@@ -35,14 +35,20 @@ export default function Login() {
   const [loginErrorPass, setLoginErrorPass] = useState('')
   const [loading, setLoading] = useState('')
 
+  const api_url = import.meta.env.VITE_API_URL
+  const api_port = import.meta.env.VITE_API_PORT
+
   const submit = async () => {
     setLoading('loading')
     try {
       //COLOCAR IP E PORTA PELO ENV URGENTE
-      const res = await axios.post('http://localhost:8080/api/auth/signin', {
-        username: loginFields.email,
-        password: loginFields.password
-      })
+      const res = await axios.post(
+        `http://${api_url}:${api_port}/api/auth/signin`,
+        {
+          username: loginFields.email,
+          password: loginFields.password
+        }
+      )
       if (res.status === 200) {
         setLoading('loading')
 

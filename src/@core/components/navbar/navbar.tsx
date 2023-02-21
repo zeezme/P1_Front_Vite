@@ -55,7 +55,7 @@ export default function Navbar() {
         className="navbar-center btn btn-ghost"
         onClick={() => navigate('/')}
       >
-        <a className=" normal-case text-xl font-bold">UNBOREFY</a>
+        <a className=" normal-case text-xl font-bold">BAGUAL</a>
       </div>
       <div className="navbar-end">
         <button
