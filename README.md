@@ -1,6 +1,6 @@
 
 
-# Unborefy
+# Store 2 Go
 
 This is an in development web sales and store front platform that is primarily focused on attending the demands of cafeterias and bars.
 The project is using Shopify API in the firsts stages but it will be replaced as soon as needed. 
