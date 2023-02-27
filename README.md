@@ -28,8 +28,8 @@ The project is using Shopify API in the firsts stages but it will be replaced as
 	 - No permission
  - Componentes Comuns
 	- ~~Botão de logout~~
- - Criar dotEnv
- - Trazer dados da API connectada ao Shopify
+ - ~~Criar dotEnv~~
+ - ~~Trazer dados da API connectada ao Shopify~~
  	 - Sincronizar o webhook do front com o do back
 
 
