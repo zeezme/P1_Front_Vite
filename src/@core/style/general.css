@@ -1,0 +1,29 @@
+.commonCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-between;
+  width: 650px;
+  height: 400px;
+  border-radius: 5px;
+}
+.commonCardImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  padding: 50px;
+
+  border-radius: 5px 0 0 5px;
+  color: red;
+}
+.commonCardInfo {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

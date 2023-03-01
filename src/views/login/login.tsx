@@ -41,7 +41,6 @@ export default function Login() {
   const submit = async () => {
     setLoading('loading')
     try {
-      //COLOCAR IP E PORTA PELO ENV URGENTE
       const res = await axios.post(
         `http://${api_url}:${api_port}/api/auth/signin`,
         {
@@ -69,7 +68,7 @@ export default function Login() {
   }
   return (
     <div className="container grid content-center	justify-items-center">
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-base-100 shadow-md">
         <div className="card-body">
           <h2 className="card-title">Login</h2>
           <div className="form-control w-full max-w-xs">

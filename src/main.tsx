@@ -3,7 +3,7 @@ import './index.css'
 import App from './App'
 import { store } from './redux/store'
 import { Provider } from 'react-redux'
-
+import '../src/@core/style/general.css'
 import { createRoot } from 'react-dom/client'
 
 const container = document.getElementById('root')
