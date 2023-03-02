@@ -10,7 +10,7 @@ import LogoutButton from '../logoutButton'
 
 export default function Navbar() {
   const cookies = new Cookies()
-
+  const redirect = useNavigate()
   const selectedTheme = useSelector(
     (state: RootState) => state.generalReducer.theme
   )
@@ -43,7 +43,7 @@ export default function Navbar() {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <div onClick={() => redirect('/')}>Homepage</div>
             </li>
             <li>
               <a>Portfolio</a>

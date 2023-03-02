@@ -10,6 +10,8 @@ const initialState: State = {
 }
 
 export const getProducts = createAsyncThunk('paywall/getProducts', async () => {
+  console.log('chegou')
+
   const response = await api.get('/shopify/products')
   console.log(response)
 

@@ -3,5 +3,5 @@ interface Props {
   children?: ReactNode
 }
 export default function CommonCard({ children, ...props }: Props) {
-  return <div className="commonCard shadow-md">{children}</div>
+  return <div className="commonCard shadow-xl">{children}</div>
 }

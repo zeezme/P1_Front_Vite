@@ -5,7 +5,7 @@ interface State {
 }
 
 const initialState: State = {
-  theme: ''
+  theme: 'dark'
 }
 
 const loginSlice = createSlice({
