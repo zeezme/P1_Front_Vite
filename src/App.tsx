@@ -1,13 +1,14 @@
-import React, {Fragment} from "react";
-import Router from "./router/router";
+import React, { Fragment } from 'react'
+import Router from './router/router'
 
 function App(): JSX.Element {
   return (
     <Fragment>
-
-      <Router/>
+      <div className="">
+        <Router />
+      </div>
     </Fragment>
-  );
+  )
 }
 
-export default App;
+export default App

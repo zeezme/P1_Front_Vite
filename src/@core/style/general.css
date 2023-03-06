@@ -8,3 +8,6 @@ body {
 
   place-items: center;
 }
+.height-no-header {
+  height: calc(100vh - 64px);
+}

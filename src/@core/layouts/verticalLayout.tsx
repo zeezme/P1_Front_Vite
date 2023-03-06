@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
-import { Outlet } from 'react-router-dom'
-import Footer from '../components/footer'
+import React, { Fragment, ReactNode } from 'react'
+import { Outlet, OutletProps } from 'react-router-dom'
 import Navbar from '../components/navbar/navbar'
+
 export default function VerticalLayout() {
   return (
     <Fragment>

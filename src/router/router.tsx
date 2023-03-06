@@ -29,15 +29,18 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<VerticalLayout />}>
-          <Route path="/" element={<Home />} />
-          {routesJson.map((route) => {
-            return (
+        {routesJson.map((route) => {
+          return route.showLayout === true ? (
+            <Route element={<VerticalLayout />}>
               <Route key={route.id} path={route.path} element={route.element} />
-            )
-          })}
-          <Route path="*" element={<NotFound />} />
-        </Route>
+            </Route>
+          ) : (
+            <Route>
+              <Route key={route.id} path={route.path} element={route.element} />
+            </Route>
+          )
+        })}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

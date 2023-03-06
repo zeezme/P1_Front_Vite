@@ -7,7 +7,9 @@ module.exports = {
     container: {
       center: true
     },
-    extend: {}
+    extend: {
+      screens: { xs: { max: '640px' } }
+    }
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')]
 }
