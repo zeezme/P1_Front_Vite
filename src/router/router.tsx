@@ -31,12 +31,12 @@ export default function Router() {
       <Routes>
         {routesJson.map((route) => {
           return route.showLayout === true ? (
-            <Route element={<VerticalLayout />}>
-              <Route key={route.id} path={route.path} element={route.element} />
+            <Route element={<VerticalLayout />} key={route.id}>
+              <Route path={route.path} element={route.element} />
             </Route>
           ) : (
-            <Route>
-              <Route key={route.id} path={route.path} element={route.element} />
+            <Route key={route.id}>
+              <Route path={route.path} element={route.element} />
             </Route>
           )
         })}
