@@ -1,4 +1,6 @@
 import React from 'react'
+import GeneralSvg from '../../@core/components/svg/general/general'
+import LoginSvg from '../../@core/components/svg/login/loginImage'
 
 export default function PayWall() {
   return (
@@ -15,8 +17,10 @@ export default function PayWall() {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-col">
-          <div className="flex flex-1 overflow-y-auto paragraph px-4"></div>
+        <div className="flex flex-1 flex-col ">
+          <div className="flex overflow-hidden items-center content-center justify-center height-no-header">
+            <GeneralSvg />
+          </div>
         </div>
       </div>
     </div>
