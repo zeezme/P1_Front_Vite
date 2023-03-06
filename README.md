@@ -7,6 +7,10 @@ The project is using Shopify API in the firsts stages but it will be replaced as
 
 [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) + [RTK](https://redux-toolkit.js.org/) + [eslint](https://eslint.org/)
 
+## Images
+![image](https://user-images.githubusercontent.com/65919238/223001756-41118c94-9e65-40bc-9243-c2347a555a23.png)
+
+
 ## To dos:
 
  - ~~Router validando permissão por rota~~
